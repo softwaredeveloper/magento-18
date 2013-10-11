@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<modules>
+		<Wokko_Surchargemodel>
+			<version>0.1.0</version>
+		</Wokko_Surchargemodel>
+	</modules>
+	<global>
+		<helpers>
+			<sales>
+				<rewrite>
+					<reorder>Wokko_Surchargehelper_Helper_Sales_Reorder</reorder>
+				</rewrite>
+			</sales>
+		</helpers>
+	</global>
+</config>

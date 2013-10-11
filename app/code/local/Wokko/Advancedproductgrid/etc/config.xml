@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<global>
+		<blocks>
+			<adminhtml>
+				<rewrite>
+					<catalog_product_grid>Wokko_Advancedproductgrid_Block_Adminhtml_Catalog_Product_Grid</catalog_product_grid>
+				</rewrite>	
+			</adminhtml>
+		</blocks>
+	</global>
+</config>

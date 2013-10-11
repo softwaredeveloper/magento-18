@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<config>
+	<modules>
+		<Magentocreation_Module>
+			<active>true</active>
+			<codePool>local</codePool>
+		</Magentocreation_Module>
+	</modules>
+</config>

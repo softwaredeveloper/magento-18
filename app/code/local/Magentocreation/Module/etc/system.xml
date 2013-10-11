@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<tabs>
+		<onglet translate='label' module='module'>
+			<label>My tab</label>
+			<sort_order>101</sort_order>
+		</onglet>
+	</tabs>
+	<sections>
+		<section translate='label' module='module'>
+			<label>My section</label>
+			<tab>onglet</tab>
+			<frontend_type>text</frontend_type>
+			<sort_order>100</sort_order>
+			<show_in_default>1</show_in_default>
+			<show_in_website>1</show_in_website>
+			<show_in_store>1</show_in_store>
+			<groups>
+				<groupe translate='label' module='module'>
+					<label>My group</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>100</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<champun translate='label comment' module='module'>
+							<label>Text field</label>
+							<comment>This is a text field</comment>
+							<frontend_type>Text</frontend_type>
+							<sort_order>1</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</champun>
+						<champdeux>
+							<label>Select a field</label>
+							<comment><![CDATA[<h2>This is a select</h2>]]></comment>
+							<frontend_type>Select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>2</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</champdeux>
+					</fields>
+				</groupe>
+			</groups>
+		</section>
+		<section1>
+			<label>My section1</label>
+			<tab>catalog</tab>
+			<frontend_type>text</frontend_type>
+			<sort_order>1</sort_order>
+			<show_in_default>1</show_in_default>
+			<show_in_website>1</show_in_website>
+			<show_in_store>1</show_in_store>
+		</section1>
+		<catalog>
+			<groups>
+				<groupe1>
+					<label>My group</label>
+					<frontend_style>text</frontend_style>
+					<sort_order>1</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<champtrois translate='label comment' module='module'>
+							<label>Text field</label>
+							<sort_order>1</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</champtrois>
+					</fields>
+				</groupe1>
+			</groups>
+		</catalog>
+	</sections>
+</config>
+<!--
+ CREATION D'ONGLETS, DE SECTIONS, DE GROUPE ET DE CHAMPS DANS LA CONFIGURATION SYSTEME
+**	My tab
+**		Mysection
+**			My group
+**				Text field - txt
+**				Select field - y/n
+**		Mysection1
+**			empty
+ -->

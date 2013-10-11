@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<modules>
+		<Wokko_Surcharge>
+			<version>0.1.0</version>
+		</Wokko_Surcharge>
+	</modules>
+	<frontend>
+		<routers>
+			<surcharge>
+				<use>standard</use>
+				<args>
+					<module>Wokko_Surcharge</module>
+					<frontName>surcharge</frontName>
+				</args>
+			</surcharge>
+		</routers>
+	</frontend>
+	<global>
+		<rewrite>
+			<wokko_surcharge_catalog_product_compare>
+			<from><![CDATA[#^/catalog/product_compare/#]]></from>
+			<to>/surcharge/catalog_product_compare/</to>
+			</wokko_surcharge_catalog_product_compare>
+		</rewrite>
+	</global>
+</config>

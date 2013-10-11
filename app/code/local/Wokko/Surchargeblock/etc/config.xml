@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<global>
+		<blocks>
+			<adminhtml>
+				<rewrite>
+					<sales_order_grid>Wokko_Surchargeblock_Block_Adminhtml_Sales_Order_Grid</sales_order_grid>
+				</rewrite>	
+			</adminhtml>
+		</blocks>
+	</global>
+</config>

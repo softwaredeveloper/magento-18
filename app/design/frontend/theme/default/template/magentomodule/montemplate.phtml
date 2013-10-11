@@ -1,0 +1,23 @@
+<?php echo "je viens de charger un template par l'intermédiaire de mon module, ce template est appelé via le layout contrôlé par mon controller"; ?>
+<h1>super promotion</h1>
+<strong> Pour l'achat d'un site magento une friteuse* offerte ! </strong>
+<p>Blablablablablabla beaucoup de texte pour cacher la petite étoile
+<h6>* capacité de la friteuse 4 à 6 frites</h6>
+<?php
+	echo $this->getChildHtml();
+	echo '<br /><h1>'.Mage::helper('module')->__('Hello world!').'</h1>';
+	
+	$nbCommandesClient = $this->getNombreCommandesClient();
+?>
+<table>
+<tr><td>Résultat :</td></tr>
+	<?php 
+		foreach($nbCommandesClient as $nbClient) :
+	?>
+	<tr>
+		<td><?php echo $nbClient->getData('nom');?></td>
+		<td><?php echo $nbClient->getData('nombre_commandes');?></td>
+	</tr>
+	<?php endforeach;?>
+	<tr><td>*Contenu de matable*</td></tr>
+</table>

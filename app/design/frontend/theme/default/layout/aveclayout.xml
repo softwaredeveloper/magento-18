@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<layout>
+	<default>
+		<reference name="root">
+			<action method="setTemplate">
+				<template>page/1column.phtml</template>
+			</action>
+		</reference>
+	</default>
+	<monrouteur_index_aveclayout>
+		<reference name="root">
+			<action method="setTemplate">
+				<template>page/1column.phtml</template>
+			</action>
+		</reference>
+		<reference name="content">
+			<block type="core/template" name="montemplate"
+				template="magentomodule/montemplate.phtml"/>
+			<block type="module/monblock" name="montemplateun"
+				template="magentomodule/montemplateun.phtml" />
+		</reference>
+	</monrouteur_index_aveclayout>
+	<monrouteur_index_index>
+		<reference name="root">
+			<action method="setTemplate">
+				<template>page/1column.phtml</template>
+			</action>
+		</reference>
+		<reference name="content">
+			<block type="module/monblock" name="montemplate"
+				template="magentomodule/montemplate.phtml"/>
+			<block type="module/monblock" name="montemplateun"
+				template="magentomodule/montemplateun.phtml" />
+		</reference>
+	</monrouteur_index_index>
+</layout>

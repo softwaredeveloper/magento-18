@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<menu>
+		<module>
+			<title>Menu Module</title>
+			<sord_order>100</sord_order>
+			<children>
+				<item1>
+					<title>Item menu module</title>
+					<sort_order>1</sort_order>
+					<action>module/adminhtml_Module/</action>
+				</item1>
+				<item2>
+					<title>Item menu module1</title>
+					<sort_order>2</sort_order>
+					<action>module/adminhtml_Module_autrereaction</action>
+				</item2>
+			</children>
+		</module>
+	</menu>
+	<acl>
+		<resources>
+			<all>
+				<title>Allow Everything</title>
+			</all>
+			<admin>
+				<children>
+					<menu translate='title' module='module'>
+						<title>Menu Module</title>
+						<sort_order>100</sort_order>
+						<children>
+							<item1 translate='title' module='module'>
+								<title>Item menu module</title>
+								<sort_order>1</sort_order>
+							</item1>
+						</children>
+					</menu>
+					<system>
+						<children>
+							<config>
+								<children>
+									<section translate='title' module='module'>
+										<title>My Section</title>
+										<sort_order>1</sort_order>
+									</section>
+									<section1 translate='title' module='module'>
+										<title>My Section</title>
+										<sort_order>1000</sort_order>
+									</section1>
+								</children>
+							</config>
+						</children>
+					</system>
+				</children>
+			</admin>
+		</resources>
+	</acl>
+</config>
